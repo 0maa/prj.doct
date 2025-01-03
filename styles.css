@@ -4,8 +4,9 @@
     padding: 0;
     background-color: antiquewhite;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
+    /* display: flex; */
     justify-content:space-;
+    display: inline-block;
 }
 #navbar{
     position: fixed;
@@ -19,22 +20,44 @@
     padding-left: 20px;
     border: solid 2px black;
     margin: 0 15 0 0;
-    flex:  1;
+    display: inline-block;
 }
 h1{
     display: block;
  } 
 .navigation{
     /* border: solid 10px black */
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.navigation ul{
+    width: 100%;
+    padding: 0;
+}
+.navigation li{
+    flex: 1;
+    border: 1px solid black;
+    color: black;
+    transition: color 0.5s;
+
+}
+.navigation li:hover{
+    color: blue;
 }
 section{
     border: solid 1px rgb(8, 8, 8);
     background-color: white;
     border-radius: 10px;
     margin: 20px;
-    padding: 10px
+    padding: 10px;
 }
 header{
     font-size: 20px;
     font-weight: 100;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+    margin: 0;
 }
