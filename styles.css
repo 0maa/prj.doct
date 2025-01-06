@@ -8,7 +8,8 @@
     justify-content:space-;
     display: inline-block;
 }
-#navbar{
+/* unneccessary navbar styling */
+/* #navbar{
     position: fixed;
     top: 0px;
     left: 0px;
@@ -22,12 +23,23 @@
     margin: 0;
     display: inline-block;
   
+} */
+
+/* added display styling */
+main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
+
 h1{
     display: block;
  } 
+
+ /* added padding */
 .navigation{
     /* border: solid 10px black */
+    padding-top: 15px;
+    padding-left: 10px;
     display: flex;
     width: 200px;
     justify-content: space-between;
@@ -64,4 +76,11 @@ ul{
 }
 .container{
     display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
 }
